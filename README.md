@@ -223,3 +223,7 @@ double형 변수 c의 주소 : 0x7ff7bfeff470
 %p 서식 지정자: 포인터 및 메모리 주소를 16진수 형태(0x...)로 출력할 때 사용하는 printf 전용 서식 지정자입니다.
 
 (void *) 형변환: C 언어 표준 규격상 %p 서식 지정자로 주소를 출력할 때는 포인터 타입을 (void *)로 캐스팅(형변환)하여 전달하는 것이 안전하고 정석적인 방법입니다.
+
+# 실습과제 4 결과
+<img width="420" height="76" alt="image" src="https://github.com/user-attachments/assets/15b0ff6f-0435-4aaa-a15e-06bcf15b436a" />
+
