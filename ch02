@@ -29,7 +29,7 @@ char ch = 'A';int in = 10;double db = 3.4;
 
 ##  실행결과
 
-
+<img width="1072" height="291" alt="Image" src="https://github.com/user-attachments/assets/331a5cb1-79df-4efd-a991-00809381e52a" />
 
 ------------------------------
 
@@ -82,4 +82,8 @@ int main(void)
 -----------------------------
 
 ##  실행결과
+
+<img width="1053" height="235" alt="Image" src="https://github.com/user-attachments/assets/95d979a4-c97a-49a1-9977-d25c8c80e7a3" />
+
+------------------------------
 
