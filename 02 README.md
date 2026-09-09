@@ -29,7 +29,9 @@ char ch = 'A';int in = 10;double db = 3.4;
 
 ##  실행결과
 
-<img width="486" height="116" alt="image" src="https://github.com/JaegeonSon/Cprogramming/issues/1#issue-5398442209" />
+<img width="1088" height="278" alt="image" src="https://github.com/user-attachments/assets/f7ac56a3-d4d6-44a7-b65a-21d43b6772fd" />
+
+
 
 ------------------------------
 
@@ -69,7 +71,8 @@ int main(void)
 
 ##  실행결과
 
-<img width="486" height="116" alt="image" src="https://github.com/JaegeonSon/Cprogramming/issues/2#issue-5398451581" />
+<img width="327" height="69" alt="image" src="https://github.com/user-attachments/assets/ca84a5f6-cc92-4e13-8c38-a5f42580cce4" />
+
 
 ------------------------------
 
@@ -83,7 +86,8 @@ int main(void)
 
 ##  실행결과
 
-<img width="486" height="116" alt="image" src="https://github.com/JaegeonSon/Cprogramming/issues/3#issue-5398458640" />
+<img width="509" height="65" alt="image" src="https://github.com/user-attachments/assets/d3fea4f6-709a-4e34-ab04-f3199b3caa91" />
+
 
 ------------------------------
 
