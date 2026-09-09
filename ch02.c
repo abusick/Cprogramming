@@ -57,7 +57,7 @@ int main(void)
 // **********************************************
 // 소스코드 작성
 //실습과제5
-     #include <stdio.h>
+#include <stdio.h>
 
 int main(void) {
     int a = 10, b = 20, c = 30;
