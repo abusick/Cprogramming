@@ -40,6 +40,7 @@ char ch = 'A';int in = 10;double db = 3.4;
 ## 실습 소스 코드
 
 #include <stdio.h>
+
 int main(void)
 {
     int* ptr = (int*)125;  // ①번 라인 
