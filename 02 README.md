@@ -44,12 +44,9 @@ char ch = 'A';int in = 10;double db = 3.4;
 int main(void)
 
 {
-    int* ptr = (int*)125;  // ①번 라인
-    
+    int* ptr = (int*)125;  // ①번 라인 
     *ptr = 10;
-    
     printf("%d\n", *ptr);
-    
     return 0;
 }
 
