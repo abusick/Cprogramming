@@ -8,7 +8,6 @@ char ch = 'A';int in = 10;double db = 3.4;
 * double db: 8바이트 크기 (주소: 105 ~ 112)
 
 ------------------------------
-## 3. 실습 문제 및 정답 표
 
 | 수식 | 결과값 | 결과값의 자료형 |
 |---|---|---|
@@ -41,7 +40,9 @@ char ch = 'A';int in = 10;double db = 3.4;
 ## 실습 소스 코드
 
 #include <stdio.h>
+
 int main(void)
+
 {
     int* ptr = (int*)125;  // ①번 라인
     *ptr = 10;
