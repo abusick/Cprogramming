@@ -42,6 +42,7 @@ char ch = 'A';int in = 10;double db = 3.4;
 #include <stdio.h>
 
 int main(void)
+
 {
     int* ptr = (int*)125;  // ①번 라인 
     *ptr = 10;
