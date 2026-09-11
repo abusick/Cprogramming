@@ -63,6 +63,7 @@ int main(void)
 // 작성자 : 2600038
 // **********************************************
 // 소스코드 작성
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
@@ -109,7 +110,7 @@ int main(void)
  * @details 키보드로부터 5개의 실수를 입력받고, 5가지 서로 다른 배열/포인터 표현 방식으로 
  *          데이터를 제어하며 동일한 메커니즘을 증명합니다.
  */
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
