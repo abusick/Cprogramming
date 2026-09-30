@@ -108,6 +108,37 @@ void split_float(double num, int* i_part, double* f_part)
     *f_part = num - *i_part;
 }
 
+#실습과제5
+// **********************************************
+// 제 목 : 포인터를 이용한 swap 프로그램
+// 날 짜 : 2026년 9월30일
+// 작성자 : 2600038 김부성
+// **********************************************
+// 소스코드 작성
+#include<stdio.h>
+
+void Swap3(int* ptr1, int* ptr2, int* ptr3);
+
+int main(void)
+{
+	int num1 = 1;
+	int num2 = 2;
+	int num3 = 3;
+
+	printf("num1 :%d, num2 :%d, num3 :%d\n", num1, num2, num3);
+	Swap3(&num1, &num2, &num3);
+	printf("num1 :%d, num2 :%d, num3 :%d\n", num1, num2, num3);
+
+
+}
+void Swap3(int* ptr1, int* ptr2, int* ptr3)
+{
+	int temp = *ptr3;
+	*ptr3 = *ptr2;
+	*ptr2 = *ptr1;
+	*ptr1 = temp;
+
+}
 #도전과제
 // **********************************************
 // 제 목 : 정수 10개를 입력하여 홀수 짝수 구분하는 프로그램
