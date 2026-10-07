@@ -1,0 +1,127 @@
+#실습과제2
+// **********************************************
+// 제 목 : 쵀댓 구하는 프로그램
+// 날 짜 : 2026년 10월 7일
+// 작성자 : 2600038 김부성
+// **********************************************
+// 소스코드 작성
+
+#include <stdio.h>
+
+int get_max(int* arr[], int size);
+
+int main(void)
+{
+    int num1 = 50, num2 = 20, num3 = 30;
+    int* ptrarr[3] = {&num1, &num2, &num3};
+    int max;
+    
+    max = get_max(ptrarr, 3); 
+    printf("최댓값:%d\n", max);
+    
+    return 0;
+}
+
+int get_max(int* arr[], int size)
+{
+
+    int max_val = *(arr[0]); 
+    
+    for (int i = 1; i < size; i++)
+    {
+        if (*(arr[i]) > max_val)
+        {
+            max_val = *(arr[i]);
+        }
+    }
+    
+    return max_val;
+}
+
+#실습과제3
+// **********************************************
+// 제 목 : 함수선언과 정의 구하는 프로그램
+// 날 짜 : 2026년 10월 7일
+// 작성자 : 2600038 김부성
+// **********************************************
+// 소스코드 작성
+#include <stdio.h>
+
+// // 함수선언
+void prn_str(char* arr[], int size);
+
+int main(void)
+{
+    char* ptrarr[] = { "eagle", "tiger", "lion", "squirrel" };
+    int count;
+    count = sizeof(ptrarr) / sizeof(ptrarr[0]);
+    prn_str(ptrarr, count);
+    return 0;
+}
+
+void prn_str(char* arr[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        printf("%s\n", arr[i]);
+    }
+}
+
+
+#실습과제4
+// **********************************************
+// 제 목 : 5개 정수 입력하여 최댓값과 최솟값 구하는 프로그램
+// 날 짜 : 2026년 10월 7일
+// 작성자 : 2600038 김부성
+// **********************************************
+// 소스코드 작성
+#define _CRT_SECURE_NO_WARNINGS // Visual Studio scanf 경고 방지 매크로 선언
+#include <stdio.h>
+
+// MaxAndMin 함수 선언 및 정의
+// arr: 배열의 시작 주소를 받음 (int*)
+// maxPtr, minPtr: main 함수의 포인터 변수 주소를 받기 위해 이중 포인터(int**) 사용
+void MaxAndMin(int *arr, int **maxPtr, int **minPtr)
+{
+    int *max; // 현재까지 발견한 최댓값의 주소를 저장할 포인터 변수
+    int *min; // 현재까지 발견한 최솟값의 주소를 저장할 포인터 변수
+    
+    max = &arr[0]; // 초기값으로 배열의 0번째 요소 주소를 지정
+    min = &arr[0]; // 초기값으로 배열의 0번째 요소 주소를 지정
+    
+    // 배열의 전체 요소(5개)를 순회하며 비교
+    for(int i = 0; i < 5; i++){
+        // arr[i]의 실제 값과 max가 가리키는 곳(*max)의 값을 비교
+        if(arr[i] > *max){ 
+            max = &arr[i]; // 더 큰 값이 발견되면 해당 요소의 주소로 업데이트
+        }
+        // arr[i]의 실제 값과 min가 가리키는 곳(*min)의 값을 비교
+        if(arr[i] < *min){
+            min = &arr[i]; // 더 작은 값이 발견되면 해당 요소의 주소로 업데이트
+        }
+    }
+    
+    // 함수 종료 전, 찾은 주소값을 main 함수의 포인터 변수에 직접 대입
+    *maxPtr = max; // maxPtr이 가리키는 곳(main의 maxPtr)에 max 주소 대입
+    *minPtr = min; // minPtr이 가리키는 곳(main의 minPtr)에 min 주소 대입
+}
+
+int main(void)
+{
+    int *maxPtr; // 최댓값의 주소를 저장할 포인터 변수
+    int *minPtr; // 최솟값의 주소를 저장할 포인터 변수
+    int arr[5];  // 크기가 5인 정수형 배열 선언
+
+    // 사용자로부터 5개의 정수를 입력받아 배열에 저장
+    for(int i = 0; i < 5; i++){
+        scanf("%d", &arr[i]);
+    }
+
+    // 함수 호출: 배열 이름(주소)과 두 포인터 변수의 주소(&)를 전달
+    MaxAndMin(arr, &maxPtr, &minPtr);
+
+    // *maxPtr과 *minPtr을 통해 저장된 주소의 실제 정수 값을 출력
+    printf("max : %d, min : %d\n", *maxPtr, *minPtr);
+
+    return 0;
+}
