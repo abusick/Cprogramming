@@ -28,9 +28,10 @@
 실행결과
 
 ---
+2-1
 <img width="1086" height="244" alt="스크린샷 2026-10-07 135007" src="https://github.com/user-attachments/assets/688dd548-6e8a-460d-881d-1d7d1b4343eb" />
 
-
+2-2
 <img width="1002" height="582" alt="스크린샷 2026-10-07 135135" src="https://github.com/user-attachments/assets/2b13b6c4-2e5d-4c39-862b-f6a139aa9c5c" />
 
 ---
@@ -57,11 +58,11 @@
 실행결과
 
 ---
-
+1
 <img width="1086" height="244" alt="스크린샷 2026-10-07 135007" src="https://github.com/user-attachments/assets/534d9f7f-1fc0-48ea-a48c-f161c0c80151" />
-
+2
 <img width="686" height="216" alt="스크린샷 2026-10-07 134854" src="https://github.com/user-attachments/assets/16095c52-cd5f-4cad-93ef-7a4fb954801b" />
-
+3
 <img width="628" height="322" alt="스크린샷 2026-10-07 135211" src="https://github.com/user-attachments/assets/058162e5-f2e6-4bd1-a8c0-418cb236389f" />
 
 
