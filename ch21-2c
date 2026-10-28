@@ -1,0 +1,133 @@
+#실습과제2
+// **********************************************
+// 제 목 : 문자를 입력 받아 화면에 출력해주는 프로그램
+// 날 짜 : 2026년 10월28일
+// 작성자 : 2600038 김부성
+// **********************************************
+// 소스코드 작성
+  #include <stdio.h>
+
+int main() 
+{
+    char ch;
+    char temp;
+    while (1) 
+    {
+        putchar('-'); putchar('-'); 
+        char msg1[] = "문자입력 : ";
+        for (int i = 0; msg1[i] != '\0'; i++) 
+        {
+            putchar(msg1[i]);
+        }
+        ch = getchar();
+        if (ch == 'q' || ch == 'Q') 
+        {
+            break;
+        }
+        char msg2[] = "입력된 문자는 ";
+        for (int i = 0; msg2[i] != '\0'; i++)
+          {
+            putchar(msg2[i]);
+        }
+        putchar(ch);
+        putchar('\n');
+        while ((temp = getchar()) != '\n' && temp != EOF);
+    }
+    return 0;
+}
+
+
+  #실습과제3
+// **********************************************
+// 제 목 : 문자열 입출력 전용함수 프로그램
+// 날 짜 : 2026년 10월28일
+// 작성자 : 2600038 김부성
+// **********************************************
+// 소스코드 작성
+    #include <stdio.h>
+
+int main(void) 
+{
+    char name[40];
+    char address[100];
+    char car_number[40];
+    printf("이름: ");
+    gets(name); 
+  
+    printf("주소: ");
+    gets(address);
+  
+    printf("자동차번호: ");
+    gets(car_number);
+    printf("\n<결과출력>\n");
+  
+    printf("이름:");
+    puts(name); 
+  
+    printf("주소:");
+    puts(address);
+  
+    printf("자동차번호:");
+    puts(car_number);
+
+    return 0;
+}
+
+
+  #실습과제4
+// **********************************************
+// 제 목 : 줄바꿈을 발생시키지 않는 프로그램
+// 날 짜 : 2026년 10월28일
+// 작성자 : 2600038 김부성
+// **********************************************
+// 소스코드 작성
+#include <stdio.h>
+#include <string.h> 
+
+int main(void)
+{
+    char str[20];
+    printf("문자열입력:");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = '\0';
+    printf("%s", str);
+    return 0;
+}
+
+
+  #실습과제5
+// **********************************************
+// 제 목 : 공백을 포함하는 문자열을 입력 받아 단어 수를 계산하여 출력하는 프로그램
+// 날 짜 : 2026년 10월28일
+// 작성자 : 2600038 김부성
+// **********************************************
+// 소스코드 작성
+#include <stdio.h>
+#include <string.h>
+
+int main(void) 
+{
+    char str[100];
+    int count = 0;
+    int i = 0;
+
+    printf("문자열입력: ");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = '\0';
+    if (str[0] == '\0') {
+        printf("단어수 : 0\n");
+        return 0;
+    }
+    if (str[0] != ' ') 
+    {
+        count = 1;
+    }
+    while (str[i] != '\0') {
+        if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0') {
+            count++;
+        }
+        i++;
+    }
+    printf("단어수 : %d\n", count);
+    return 0;
+}
